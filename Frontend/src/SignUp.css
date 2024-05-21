@@ -1,0 +1,95 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://p4.wallpaperbetter.com/wallpaper/386/316/969/dark-outer-space-stars-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensure the background image covers the whole screen */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; /* Enable vertical scrolling for the body */
+  max-height: 100vh; /* Optional: Limit the scrolling area to the full viewport height */
+}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 4px;
+    
+  }
+  .input-container {
+  display: flex;
+}
+
+.input-field {
+  flex: 1;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 0 10px 10px 0;
+  border: solid 2px;
+}
+
+.icon {
+  padding: 15px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  min-width: 50px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+.rounded-image{
+  border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+  .h-custom {
+    height: 100%;
+    
+  }
+}
+
+
+.text-danger
+{
+padding-top: -1px;
+  
+}
+.input-container
+{
+  padding: 3px;
+} 
+.popup
+{
+  color: rgb(0, 251, 255);
+
+  
+}
+.scrollable-wrapper {
+  height: 100vh; /* Set the height of the wrapper to full viewport height */
+  overflow-y: auto; /* Enable vertical scrolling for the wrapper */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/* Hide the vertical and horizontal scrollbars without disabling their functionality */
+.scrollable-wrapper::-webkit-scrollbar {
+  display: none;
+}
