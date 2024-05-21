@@ -1,0 +1,26 @@
+<div id="app">
+    <video-player :options="vlcOptions" ref="videoPlayer"></video-player>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/video.js@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-video-player@latest"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            vlcOptions: {
+                autoplay: true,
+                controls: true,
+                muted: true,
+                language: 'en',
+                playbackRates: [0.5, 1, 1.5, 2],
+                sources: [{
+                    type: 'application/x-mpegURL',
+                    src: '/path/to/output/stream.m3u8', // HLS stream URL
+                }],
+            },
+        },
+    });
+</script>
+ 
